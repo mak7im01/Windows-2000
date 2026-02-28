@@ -1,0 +1,19 @@
+{
+    "name": "Windows2000",
+    "image": "avatar.png",
+    "banner": "",
+    "libraryLogo": "",
+    "author": "dobryjigrok",
+    "description": "Windows 2000 классический стиль Windows 2000 в Яндекс Музыке",
+    "version": "1.0.0",
+    "css": "style.css",
+    "script": "",
+    "type": "theme",
+    "tags": [
+        "windows2000",
+        "retro",
+        "UI",
+        "theme"
+    ],
+    "fromPext": true
+}

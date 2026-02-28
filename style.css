@@ -1,0 +1,769 @@
+/* Windows 2000 Theme for PulseSync 2.0 */
+
+:root {
+    --ym-controls-color-primary-text-enabled_variant: #222222;
+    --ym-controls-color-primary-text-vibe_icon: black;
+    --ym-controls-color-primary-text-enabled: #222222;
+    --ym-controls-color-secondary-default-enabled: hsl(0, 0%, 0%);
+
+    /* radius */
+    --ym-radius-size-xs: 0;
+    --ym-radius-size-s: 0;
+    --ym-radius-size-m: 0;
+    --ym-radius-size-l: 0;
+    --ym-radius-size-xl: 0;
+    --ym-radius-size-xxl: 0;
+    --ym-radius-size-xxxl: 0;
+    --ym-radius-size-round: 0;
+}
+
+/* Глобальное удаление всех закруглений */
+* {
+    border-radius: 0 !important;
+}
+
+/* ===== ОСНОВНОЙ LAYOUT ===== */
+.DefaultLayout_root__7J0wo {
+    background: rgb(192, 192, 192);
+    padding-inline-end: 8px;
+    column-gap: 7px;
+    grid-template:
+        "navbar content" minmax(auto, calc(100% - var(--player-bar-height) - var(--ym-spacer-size-m))) 
+        "playerbar playerbar" auto
+        "barBellow barBellow" auto/auto 1fr;
+}
+
+.DefaultLayout_root_applicationPreserveTitleBar__ygJtq {
+    padding-block-start: 35px;
+    padding-block-end: 1px;
+}
+
+.DefaultLayout_content__md70Z {
+    border-radius: 0;
+}
+
+.DefaultLayout_navbar_application_windows__3hDQ_ {
+    margin-block-start: 1px;
+    padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+.Navbar_root__chF4R {
+    --navbar-width: 200px;
+}
+
+.NavbarDesktop_root__scYzp {
+    align-items: start;
+}
+
+.NavbarDesktop_logoLink__KR0Dk {
+    display: none;
+}
+
+.NavbarDesktop_user__dzbuH {
+    display: none;
+}
+
+.NavbarDesktop_scrollableContent__OyU4P {
+    align-items: flex-start;
+    padding-top: 0;
+    width: 100%;
+}
+
+.NavbarDesktop_scrollableContainer__HLc9D {
+    order: 3;
+    width: 100%;
+}
+
+nav.NavbarDesktop_navigation__dLUGW {
+    max-width: none;
+    width: 100%;
+}
+
+/* Убираем белые засветы (fade эффекты) */
+.NavbarDesktop_scrollableContainer__HLc9D::before,
+.NavbarDesktop_scrollableContainer__HLc9D::after {
+    display: none !important;
+}
+
+.NavbarDesktop_pinsList___jXIM::before,
+.NavbarDesktop_pinsList___jXIM::after {
+    display: none !important;
+}
+
+/* ===== NAVIGATION BUTTONS ===== */
+button.NavbarDesktop_collapseButton__XQh9d {
+    display: none;
+}
+
+/* Контейнер навигации */
+nav.NavbarDesktop_navigation__dLUGW {
+    max-width: none;
+    width: 100%;
+}
+
+/* Список навигации */
+.yuyI2hMAT7qyL1N14MAQ {
+    width: 100%;
+}
+
+/* Элементы списка навигации */
+.yuyI2hMAT7qyL1N14MAQ > li {
+    width: 100% !important;
+}
+
+/* Кнопки навигации - обычное состояние */
+.Xx9Tg5ugzg1pkf8Zh421 {
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 12px;
+    gap: 6px;
+    background: #C0C0C0;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.Xx9Tg5ugzg1pkf8Zh421:active {
+    position: relative;
+}
+
+.Xx9Tg5ugzg1pkf8Zh421:active::before {
+    content: "";
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 1px #000000 dashed;
+    z-index: -1;
+}
+
+/* Кнопки навигации - активное состояние */
+.mAd9pgMkWVX5ktCgYINQ {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 12px;
+    gap: 6px;
+    background: #C0C0C0;
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* ===== PINS LIST ===== */
+body>div>aside>div>div:nth-child(3),
+div.NavbarDesktop_pinsList___jXIM {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1px;
+    gap: 6px;
+    isolation: isolate;
+    --pins-top-fade-height: none;
+    --pins-bottom-fade-height: none;
+    background: #FFFFFF;
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080;
+}
+
+.Pin_cover__7ofYY {
+    --size: 16px;
+    min-width: var(--size);
+    max-width: var(--size);
+    min-height: var(--size);
+    max-height: var(--size);
+}
+
+.Pin_subtitle__rb8Gq {
+    display: none;
+}
+
+.PinItem_root__WSoCn {
+    display: flex;
+    height: fit-content;
+}
+
+.IXo8WeM40YvVigqgCP7J {
+    width: 85%;
+    padding: 0 !important;
+}
+
+/* ===== PIN ANIMATIONS FIX ===== */
+div.Pin_info_collapsed__bF9ac.Pin_info_animated__AQQZk,
+div.Pin_info_animated__AQQZk {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+div.Pin_info_collapsed__bF9ac {
+    opacity: 1 !important;
+}
+
+/* ===== NAVBAR ANIMATIONS FIX ===== */
+span.NavbarDesktop_title_collapsed__IH9Bc {
+    opacity: 1 !important;
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+span.NavbarDesktop_title_animate__XLxaQ {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+div.NavbarDesktop_userMeta_animate__3KkeR.NavbarDesktop_userMeta_collapsed__rTdFz,
+div.NavbarDesktop_userMeta_animate__3KkeR {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+div.NavbarDesktop_userMeta_collapsed__rTdFz {
+    opacity: 1 !important;
+}
+
+.Tg0CBGNTu8E6Co0PG9Re._bJdL1PXK9QiPQRUctVv,
+.Tg0CBGNTu8E6Co0PG9Re {
+    -webkit-animation: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+}
+
+div._bJdL1PXK9QiPQRUctVv {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+div.QYIUcw5hsJgmlwLrB5fw {
+    gap: var(--ym-spacer-size-s) !important;
+}
+
+/* ===== USER PROFILE ===== */
+/* Показываем блок пользователя */
+.NavbarDesktop_user__dzbuH {
+    display: block !important;
+    margin-top: calc(var(--ym-spacer-size-xs) / 2);
+    padding: 6px;
+    background: #C0C0C0;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF;
+}
+
+/* Аватарка пользователя - возвращаем закругление */
+.NavbarDesktop_user__dzbuH img,
+.UserID-Avatar,
+div[class*="Avatar"] img,
+.NavbarDesktopUserWidget_avatar__,
+img[class*="avatar"] {
+    border-radius: 50% !important;
+}
+
+a.UserProfile_plusLink__NhVsU {
+    display: none;
+}
+
+div.NavbarDesktopUserWidget_userProfileContainer__ha3Tm {
+    order: 2;
+}
+
+div.NavbarDesktop_pinsList___jXIM {
+    order: 3;
+}
+
+div.UserID-Wrapper {
+    --user-id-size: 22px !important;
+    margin: 5px;
+}
+
+div.UserProfile_root__vFuOj {
+    gap: var(--ym-spacer-size-xs);
+}
+
+.NavbarDesktopUserWidget_userMeta_collapsed__cSARy {
+    opacity: 1;
+}
+
+/* Стилизация текста в блоке пользователя */
+.NavbarDesktop_user__dzbuH * {
+    color: #222222 !important;
+}
+
+div.UserWidget-Dialog.UserWidget-Dialog_visible {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    height: fit-content !important;
+    max-height: fit-content !important;
+}
+
+.UserWidget-Dialog_visible .UserWidget-Content {
+    height: fit-content !important;
+}
+
+.UserWidget-Dialog_platform_desktop.UserWidget-Dialog .UserWidget-Iframe {
+    max-height: 573px !important;
+}
+
+/* ===== MAIN CONTENT ===== */
+.MainPage_content__kskSM {
+    border-radius: 0;
+    padding: 0px 6px;
+    gap: 6px;
+    isolation: isolate;
+    background: #FFFFFF;
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080;
+}
+
+.Content_rootOld__g85_m {
+    background-color: #FFFFFF;
+    padding: 1px;
+    overflow: hidden;
+    isolation: isolate;
+    --pins-top-fade-height: none;
+    --pins-bottom-fade-height: none;
+    background: #FFFFFF;
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080;
+}
+
+/* Глобальный белый фон для всех страниц (кроме полноэкранного режима) */
+.DefaultLayout_content__md70Z:not(div[data-test-id="FULLSCREEN_PLAYER_MODAL"] *),
+.DefaultLayout_content__md70Z > div:not(div[data-test-id="FULLSCREEN_PLAYER_MODAL"] *),
+main[class*="Page_root"]:not(div[data-test-id="FULLSCREEN_PLAYER_MODAL"] *),
+div[class*="Page_content"]:not(div[data-test-id="FULLSCREEN_PLAYER_MODAL"] *),
+div[class*="Content_root"]:not(div[data-test-id="FULLSCREEN_PLAYER_MODAL"] *) {
+    background: #FFFFFF !important;
+}
+
+/* ===== VIBE CONTEXT ===== */
+.VibeContext_context__Z_82k {
+    background: #C0C0C0;
+    color: black !important;
+    padding: 9px 9px;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF;
+}
+
+.VibeContext_context__Z_82k * {
+    color: black !important;
+}
+
+.VibeBlock_vibeAnimation__XVEE6 canvas {
+    display: none;
+}
+
+.MainPage_vibe__XEBbh {
+    height: 45vh;
+}
+
+/* ===== LIKES AND HISTORY ===== */
+.nHWc2sto1C6Gm0Dpw_l0:not(.FullscreenPlayerDesktopControls_root__tviu4 *):not(.FullscreenPlayerDesktopControls_playQueueButton__reNOW):not(.SonataFullscreenControlsDesktop_sonataButton__69FFc):not(.FullscreenPlayerDesktopControls_likeButton__vpJ7S):not(.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp):not(.TrackModal_root__QrFg6 *):not([role="menu"] *):not([role="menuitem"]),
+.LikesAndHistoryItem_root__oI1gk {
+    padding: 6px 6px;
+    gap: 6px;
+    background: #C0C0C0;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF;
+    border-radius: 0;
+    color: black !important;
+}
+
+.nHWc2sto1C6Gm0Dpw_l0:not(.FullscreenPlayerDesktopControls_root__tviu4 *):not(.FullscreenPlayerDesktopControls_playQueueButton__reNOW):not(.SonataFullscreenControlsDesktop_sonataButton__69FFc):not(.FullscreenPlayerDesktopControls_likeButton__vpJ7S):not(.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp):not(.TrackModal_root__QrFg6 *):not([role="menu"] *):not([role="menuitem"]):active,
+.LikesAndHistoryItem_root__oI1gk:active {
+    position: relative;
+}
+
+.nHWc2sto1C6Gm0Dpw_l0:not(.FullscreenPlayerDesktopControls_root__tviu4 *):not(.FullscreenPlayerDesktopControls_playQueueButton__reNOW):not(.SonataFullscreenControlsDesktop_sonataButton__69FFc):not(.FullscreenPlayerDesktopControls_likeButton__vpJ7S):not(.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp):not(.TrackModal_root__QrFg6 *):not([role="menu"] *):not([role="menuitem"]):active::before,
+.LikesAndHistoryItem_root__oI1gk:active::before {
+    content: "";
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 1px #000000 dashed;
+    z-index: -1;
+}
+
+.nHWc2sto1C6Gm0Dpw_l0:not(.FullscreenPlayerDesktopControls_root__tviu4 *):not(.FullscreenPlayerDesktopControls_playQueueButton__reNOW):not(.SonataFullscreenControlsDesktop_sonataButton__69FFc):not(.FullscreenPlayerDesktopControls_likeButton__vpJ7S):not(.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp):not(.TrackModal_root__QrFg6 *):not([role="menu"] *):not([role="menuitem"]):hover,
+.LikesAndHistoryItem_root__oI1gk:hover {
+    background: #C0C0C0;
+}
+
+.nHWc2sto1C6Gm0Dpw_l0:not(.FullscreenPlayerDesktopControls_root__tviu4 *):not(.FullscreenPlayerDesktopControls_playQueueButton__reNOW):not(.SonataFullscreenControlsDesktop_sonataButton__69FFc):not(.FullscreenPlayerDesktopControls_likeButton__vpJ7S):not(.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp):not(.TrackModal_root__QrFg6 *):not([role="menu"] *):not([role="menuitem"]) *,
+.LikesAndHistoryItem_root__oI1gk * {
+    color: black !important;
+}
+
+/* ===== PLAYLIST/ARTIST PAGE ===== */
+.PlaylistPage_averageColorBackground__3wEkw {
+    background: none;
+    transform: translateY(-55px) !important;
+}
+
+.ArtistPage_averageColorBackground__wXTSY {
+    background: none;
+    transform: translateY(-55px) !important;
+}
+
+/* Фон плейлистов и страниц артистов */
+.PlaylistPage_root__Ql_Uw,
+.ArtistPage_root__mhW_c,
+div[class*="PlaylistPage_"],
+div[class*="ArtistPage_"] {
+    background: #FFFFFF !important;
+}
+
+.InnerHeader_root_showColor__wMtVK {
+    background-color: transparent;
+    transform: translateY(0) !important;
+}
+
+.InnerHeader_root__u0zu1 {
+    transform: translateY(5px);
+}
+
+/* Отступ для sticky заголовка, чтобы не налазил на скроллбар */
+.InnerHeader_root_sticky__baN8o {
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.InnerHeader_root_sticky__baN8o .CommonHeader_container__Jgf0s {
+    padding-right: 20px;
+}
+
+.InnerHeader_title__5aVLP {
+    padding-right: 20px;
+    max-width: calc(100% - 40px);
+}
+
+.CommonHeader_leftBlock__dJUBK {
+    max-width: calc(100% - 40px);
+}
+
+.TextHeader_stickyItem_scrolling__YPBOL {
+    color: white;
+    background: #000A71;
+    width: calc(100% - 40px) !important;
+    right: 19px;
+    top: 1px;
+    left: 1px;
+    padding-right: 20px;
+}
+
+/* ===== PLAY BUTTON ===== */
+.PlayButton_root__nYKdN {
+    color: black;
+}
+
+/* ===== FULLSCREEN PLAY/PAUSE BUTTON ===== */
+/* Все кнопки в полноэкранном режиме */
+.FullscreenPlayerDesktopControls_root__tviu4 button {
+    background: #C0C0C0 !important;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF !important;
+}
+
+.FullscreenPlayerDesktopControls_root__tviu4 button:active {
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080 !important;
+}
+
+.FullscreenPlayerDesktopControls_root__tviu4 button svg {
+    color: #000000 !important;
+    fill: #000000 !important;
+    display: block !important;
+}
+
+.FullscreenPlayerDesktopControls_root__tviu4 button:hover {
+    background: #C0C0C0 !important;
+}
+
+/* Кнопка Play/Pause в полноэкранном режиме */
+.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp {
+    background: #C0C0C0 !important;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF !important;
+}
+
+.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp:active {
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080 !important;
+}
+
+.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp svg,
+.SonataFullscreenControlsDesktop_playPauseButtonIcon__IkUNX {
+    color: #000000 !important;
+    fill: #000000 !important;
+    display: block !important;
+}
+
+.SonataFullscreenControlsDesktop_sonataPlayButton__QXEEp:hover {
+    background: #C0C0C0 !important;
+}
+
+/* Прогресс-бар в полноэкранном режиме */
+div[data-test-id="FULLSCREEN_PLAYER_MODAL"] input[type="range"] {
+    background: #222222 !important;
+    box-shadow: 0px 1px 0px #FFFFFF, inset 1px 1px 0px #B8B8B8, inset -1px -1px 0px #757575, inset 0px 1px 0px #9F9F9F !important;
+}
+
+div[data-test-id="FULLSCREEN_PLAYER_MODAL"] input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: transparent;
+    box-shadow: 0 0 0 0 #555;
+    width: 0 !important;
+}
+
+div[data-test-id="FULLSCREEN_PLAYER_MODAL"] input[type="range"]::before {
+    background: #FFFFFF !important;
+    height: 3px !important;
+}
+
+/* ===== PLAYER BAR ===== */
+.PlayerBar_root__cXUnU {
+    background: #C0C0C0;
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080;
+    margin-block-start: 7px;
+}
+
+.PlayerBar_root__cXUnU * {
+    color: #222222;
+}
+
+/* ===== PLAYER CONTROLS ===== */
+
+input[type="range"] {
+    grid-area: slider;
+    height: 3px;
+    background: #222222;
+    box-shadow: 0px 1px 0px #FFFFFF, inset 1px 1px 0px #B8B8B8, inset -1px -1px 0px #757575, inset 0px 1px 0px #9F9F9F;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: transparent;
+    box-shadow: 0 0 0 0 #555;
+    width: 0 !important;
+}
+
+input[type="range"]::before {
+    background: none;
+}
+
+/* ===== PROGRESS BAR ===== */
+
+/* ===== RESPONSIVE ===== */
+@media only screen and (max-width: 1080px) {
+    .DefaultLayout_root__7J0wo {
+        grid-template: "navbar content" 1fr "navbar playerbar" auto/auto 1fr;
+    }
+    .PlayerBarDesktop_likeButton__LKH4K {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .DefaultLayout_root__7J0wo {
+        grid-template: "navbar content" 1fr "navbar playerbar" auto/auto 1fr;
+    }
+
+    .desktop .DefaultLayout_root__7J0wo {
+        grid-template: "navbar content" 1fr "navbar playerbar" auto/auto 1fr;
+    }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+    width: 16px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #C0C0C0 !important;
+    border-left: 1px solid #808080 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid #B8C0C1 !important;
+    border-radius: 0 !important;
+    background: #B8C0C1 !important;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF !important;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A0A0A0 !important;
+}
+
+/* ===== TITLE BAR ===== */
+.TitleBar_root__QjdOZ {
+    height: fit-content;
+    background: rgb(0, 0, 168);
+    margin: 5px 8px 4px 8px;
+    padding: 4px 6px;
+    gap: 4px;
+    width: -webkit-fill-available;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #DFDFDF, inset -2px -2px 0px #808080, inset 2px 2px 0px #FFFFFF;
+}
+
+.TitleBar_button__9MptL {
+    position: relative;
+    height: 21px;
+    width: 21px;
+    min-width: 21px;
+    min-height: 21px;
+    background: #C0C0C0;
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TitleBar_button__9MptL:hover {
+    background: #808080 !important;
+}
+
+.TitleBar_icon__8Wji9 {
+    display: none;
+}
+
+.TitleBar_button__9MptL:active {
+    box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #0A0A0A, inset -2px -2px 0px #DFDFDF, inset 2px 2px 0px #808080;
+}
+
+.TitleBar_button__9MptL:active::before {
+    content: "";
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 1px #000000 dashed;
+    z-index: 3;
+}
+
+/* Pin button (2nd button) */
+.TitleBar_root__QjdOZ>button:nth-child(2)::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #000000;
+    position: relative;
+    top: -1px;
+}
+
+.TitleBar_root__QjdOZ>button:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 4px;
+    background: #000000;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.TitleBar_root__QjdOZ>button:nth-child(2):hover::after {
+    border-bottom-color: #000000 !important;
+}
+
+.TitleBar_root__QjdOZ>button:nth-child(2):hover::before {
+    background: #000000 !important;
+}
+
+/* Minimize button */
+.TitleBar_root__QjdOZ>button:nth-child(3)::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 2px;
+    background: #000000;
+    position: relative;
+    bottom: -2px;
+}
+
+.TitleBar_root__QjdOZ>button:nth-child(3):hover::after {
+    background: #000000 !important;
+}
+
+/* Maximize button */
+.TitleBar_root__QjdOZ>button:nth-child(4)::after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #000000;
+    border-bottom-width: 3px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.TitleBar_root__QjdOZ>button:nth-child(4):hover::after {
+    border-color: #000000 !important;
+}
+
+/* Close button */
+.TitleBar_root__QjdOZ>button:nth-child(5)::after {
+    content: "×";
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    position: relative;
+}
+
+.TitleBar_root__QjdOZ>button:nth-child(5):hover {
+    background: #C00000 !important;
+}
+
+.TitleBar_root__QjdOZ>button:nth-child(5):hover::after {
+    color: #FFFFFF !important;
+}
+
+/* ===== NAVIGATION ICONS ===== */
+/* Иконки навигации убраны, используются стандартные иконки Яндекс Музыки */
+
+/* ===== MISC ===== */
+.hYfgO_Y8c4rrQsZJWTDZ {
+    border-radius: 0;
+}
+
+.uBAHj5MFmkw_QyxKuhdi {
+    background: rgb(192, 192, 192);
+    box-shadow: inset -1px -1px 0px #0A0A0A, inset 1px 1px 0px #FFFFFF, inset -2px -2px 0px #808080, inset 2px 2px 0px #DFDFDF;
+}
+
+/* Позиционирование меню пользователя */
+div[data-log="auth"]._root_11ibd_1 {
+    position: fixed !important;
+    top: 50px !important;
+    left: 50px !important;
+    transform: none !important;
+}
+
+/* Скрываем SVG только вне полноэкранного режима */
+.o_v2ds2BaqtzAsRuCVjw:not(.FullscreenPlayerDesktopControls_root__tviu4 *):not(.SonataFullscreenControlsDesktop_playPauseButtonIcon__IkUNX):not(.LikesAndHistory_historyIcon__2FAMu) {
+    display: none;
+}
+
+/* Показываем иконку истории */
+.LikesAndHistory_historyIcon__2FAMu {
+    display: block !important;
+    color: #000000 !important;
+    fill: #000000 !important;
+}
